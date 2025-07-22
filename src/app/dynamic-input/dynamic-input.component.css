@@ -1,0 +1,19 @@
+.editable-title {
+  display: inline-block;
+}
+
+h1 {
+  cursor: pointer;
+}
+
+input {
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.dynamic-input-container{
+  display: flex;
+  justify-content: center;
+}

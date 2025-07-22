@@ -1,0 +1,8 @@
+<div class="dynamic-input-container">
+  <div class="editable-title">
+    <h1 *ngIf="!isEditing" (click)="enableEditing()">{{ title }}</h1>
+    <h1>
+      <input *ngIf="isEditing" [(ngModel)]="title" (blur)="disableEditing()" (keyup.enter)="disableEditing()" />
+    </h1>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div id="songInfoAndInputs">
+    <app-dynamic-input></app-dynamic-input>
+        <div id="songInfo">
+            <h1><input #sheetTitle class="allInherit pointer-cursor editableText" id="sheetTitle" [(ngModel)]="sheetData.name"></h1>
+            <h4><input #sheetAuthor class="allInherit pointer-cursor editableText" id="sheetAuthor" [(ngModel)]="sheetData.author"></h4>
+        </div>
+        <div id="bpmAndFirstFreq">
+            <div id="bpm" class="songInput">
+                <label>Pulsos por minuto (BPM)</label>
+                <div class="songEquation">
+                    <span class="musical-characters"> &#113; </span>
+                    <span> = </span>
+                    <input #sheetBpm class="editableText" id="sheetBpm" type="number" [(ngModel)]="sheetData.bpm">
+                </div>
+            </div>
+            <div id="firstFreq" class="songInput">
+                <label>Frecuencia primera tónica (Hz)</label>
+                <div class="songEquation">
+                    <div class="symbol">
+                        <span>1ª</span>
+                        <span class="musical-characters"> &#113;</span>
+                    </div>
+                    <span> = </span>
+                    <input #sheetFirstRootFreq class="editableText" id="sheetFirstRootFreq" type="number" [(ngModel)]="sheetData.firstRootFrequency">
+                </div>
+            </div>
+        </div>
+    </div>

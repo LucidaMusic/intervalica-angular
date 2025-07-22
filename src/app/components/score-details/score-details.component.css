@@ -1,0 +1,53 @@
+#bpmAndFirstFreq {
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#sheetTitle {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.symbol {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.songEquation {
+  padding-left: 20px;
+  display: flex;
+  font-size: 2rem;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25em;
+}
+
+.editableText {
+  font-family: auto;
+  font-size: 1em;
+  border: none;
+  display: inline-block;
+  width: auto; /* Permite que el ancho se ajuste automáticamente */
+  min-width: 20px; /* Establece un ancho mínimo para el input */
+}
+
+.editableText:hover {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 5px var(--color-secundario);
+}
+
+#songInfo {
+  text-align: center;
+  margin: 0.25em;
+}
+
+#songInfoAndInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1em;
+}

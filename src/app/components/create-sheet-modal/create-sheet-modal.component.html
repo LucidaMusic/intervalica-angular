@@ -1,0 +1,21 @@
+<h2>Crear nueva partitura</h2>
+<form (ngSubmit)="onSubmit()">
+  <label>
+    Nombre:
+    <input [(ngModel)]="sheetData.name" name="nombre" required placeholder="Nombre de la partitura">
+  </label>
+  <label>
+    Autor:
+    <input [(ngModel)]="sheetData.author" name="autor" required placeholder="Nombre del autor">
+  </label>
+  <label>
+    BPM:
+    <input type="number" [(ngModel)]="sheetData.bpm" name="bpm" required>
+  </label>
+  <label>
+    Frecuencia (1-10000):
+    <input type="number" [(ngModel)]="sheetData.firstRootFrequency" name="frecuencia" min="1" max="10000" required>
+  </label>
+  <button type="submit">Aceptar</button>
+  <button type="button" (click)="onNoClick()">Cancelar</button>
+</form>
