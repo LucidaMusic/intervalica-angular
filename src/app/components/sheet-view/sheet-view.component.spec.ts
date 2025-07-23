@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DynamicInputComponent } from './dynamic-input.component';
+import { SheetViewComponent } from './sheet-view.component';
 
-describe('DynamicInputComponent', () => {
-  let component: DynamicInputComponent;
-  let fixture: ComponentFixture<DynamicInputComponent>;
+describe('SheetViewComponent', () => {
+  let component: SheetViewComponent;
+  let fixture: ComponentFixture<SheetViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DynamicInputComponent ]
+      declarations: [ SheetViewComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DynamicInputComponent);
+    fixture = TestBed.createComponent(SheetViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

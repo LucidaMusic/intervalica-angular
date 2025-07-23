@@ -10,7 +10,8 @@ import { ModalComponent } from './components/create-sheet-modal/create-sheet-mod
 import { AppRoutingModule } from './app-routing.module';
 import { ScoreDetailsComponent } from './components/score-details/score-details.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { DynamicInputComponent } from './dynamic-input/dynamic-input.component';
+import { MusicControlsBarComponent } from './components/music-controls-bar/music-controls-bar.component';
+import { SheetViewComponent } from './components/sheet-view/sheet-view.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DynamicInputComponent } from './dynamic-input/dynamic-input.component';
     ModalComponent,
     ScoreDetailsComponent,
     NavbarComponent,
-    DynamicInputComponent
+    MusicControlsBarComponent,
+    SheetViewComponent
   ],
   imports: [
     BrowserModule,

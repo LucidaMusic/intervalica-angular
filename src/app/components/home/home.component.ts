@@ -17,7 +17,7 @@ export class HomeComponent {
 
     dialogRef.afterClosed().subscribe((result: SheetData | undefined) => {
       if (result) {
-        this.router.navigate(['/score-details'], { state: result });
+        this.router.navigate(['/sheet-view'], { state: result });
       }
     });
   }
