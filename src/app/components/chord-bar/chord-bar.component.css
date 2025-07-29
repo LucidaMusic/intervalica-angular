@@ -1,0 +1,27 @@
+#chord-bar {
+  display: flex;
+  overflow-x: scroll;
+  min-height: 500px;
+  align-items: center;
+  background-color: var(--color-background);
+}
+
+#chord-bar-container {
+  display: flex;
+  background-color: var(--color-secundario);
+}
+
+#chord-bar-placeholder {
+  color: white;
+  display: flex;
+  background-color: var(--color-secundario);
+  width: 100%;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-chord-button {
+  padding: 0;
+  border: 0;
+}

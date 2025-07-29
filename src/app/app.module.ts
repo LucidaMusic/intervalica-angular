@@ -12,6 +12,7 @@ import { ScoreDetailsComponent } from './components/score-details/score-details.
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MusicControlsBarComponent } from './components/music-controls-bar/music-controls-bar.component';
 import { SheetViewComponent } from './components/sheet-view/sheet-view.component';
+import { ChordBarComponent } from './components/chord-bar/chord-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SheetViewComponent } from './components/sheet-view/sheet-view.component
     ScoreDetailsComponent,
     NavbarComponent,
     MusicControlsBarComponent,
-    SheetViewComponent
+    SheetViewComponent,
+    ChordBarComponent
   ],
   imports: [
     BrowserModule,

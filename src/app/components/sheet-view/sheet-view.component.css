@@ -1,0 +1,10 @@
+#sheet {
+  border: 1px solid;
+}
+
+#songInfoAndInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2em;
+}

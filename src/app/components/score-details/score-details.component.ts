@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild, OnDestroy, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { SheetData } from 'src/app/models/sheet-data.model';
 
@@ -13,10 +13,10 @@ export class ScoreDetailsComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('sheetAuthor') sheetAuthor!: ElementRef;
   @ViewChild('sheetBpm') sheetBpm!: ElementRef;
   @ViewChild('sheetFirstRootFreq') sheetFirstRootFreq!: ElementRef;
-  
+
   private spans: HTMLSpanElement[] = []; // Almacena los spans creados
 
-  constructor(private router: Router, private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
     this.sheetData = history.state;
@@ -66,5 +66,10 @@ export class ScoreDetailsComponent implements OnInit, AfterViewInit, OnDestroy {
       document.body.removeChild(span);
     });
     this.spans = []; // Limpia el array
+  }
+
+  @HostListener('window:beforeunload', ['$event'])
+  unloadNotification($event: any) {
+    $event.returnValue = 'Tienes cambios no guardados. ¿Estás seguro de que quieres salir?';
   }
 }

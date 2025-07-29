@@ -1,0 +1,13 @@
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-direction: column;
+}
+
+#home-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

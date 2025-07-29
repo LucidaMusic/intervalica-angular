@@ -43,6 +43,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   border: 0;
   align-content: center;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .decorated-button:not(:disabled):hover {
@@ -53,4 +55,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-color: var(--color-secundario);
   color: white;
 
+}
+
+.small-icon {
+  width: 24px;
 }

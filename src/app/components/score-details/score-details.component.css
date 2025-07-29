@@ -39,9 +39,6 @@
   margin: 0.25em;
 }
 
-#songInfoAndInputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1em;
+h1,h4{
+  margin: 0;
 }
